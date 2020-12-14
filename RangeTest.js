@@ -6,7 +6,7 @@ var assert = require("assert");
 
 describe("Range [7,11) EndPoints ShouldBe {7,10}", function(){
     it("Should Return {7,10}", function(){
-        expect(methods.EndPoints("[7,11)")).to.be.eqls([7,11])
+        expect(methods.EndPoints("[7,11)")).to.be.eqls([7,10])
     })
 });
 describe("Range (2,10)  Endpoints ShouldBe{3,9}", function(){

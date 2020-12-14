@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "Range.js",
-  "dependencies": {},
+  "dependencies": {
+    "chai": "^4.2.0"
+  },
   "devDependencies": {
     "mocha": "^8.2.1"
   },
