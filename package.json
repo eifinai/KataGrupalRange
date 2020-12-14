@@ -1,0 +1,15 @@
+{
+  "name": "katagrupal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Range.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^8.2.1"
+  },
+  "scripts": {
+    "test": "mocha ./RangeTest.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
