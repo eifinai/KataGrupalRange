@@ -1,0 +1,38 @@
+--Requerimientos
+
+    Req-01: El progrma debe poder aceptar una cadena que represente un rango numerico con un inicio con un valor final.
+    Req-02: el sistema debe poder identificar si un rango se encuentra dentro de otro.
+    Req-03: El sistema debe poder reconocer si dos rangos son iguales.
+    Req-04: El sistema debe poder verificar si dos rangos se superponen.
+    
+-- Criterios de exito
+    
+    Cri-1-1: Debe poder obtener todos los puntos de un rango.    
+    Cri-1-2: Debe obtener los puntos finales de un rango
+    Cri-2-1: Debe poder verificar si un rango B se encuentra dentro de un rango A 
+    Cri-2-2: Debe poder verificar si un rango B no se encuentra dentro de un rango A 
+    Cri-3-1: Debe poder tomar dos rangos y compararlos para ver si son iguales 
+    Cri-4-1: Debe poder tomar los puntos finales de los rangos para ver si estos se superponen.
+    
+--Escenarios de prueba
+    
+   --01: Range [7,11) EndPoints ShouldBe {7,10}
+   --02: Range (2,10)  Endpoints ShouldBe{3,9}
+   --03: Range (2,6) EndPoints ShouldBe {3,5}
+   --04: Range (7,11) EndPoints ShouldBe {8,10}
+   --05: Range(3, 8] areEqual[4, 9)
+   --06: Range [5,6) areEqual (4,5]
+   --07: Range (2,10] getAllPoints {3,4,5,6,7,8,9,10}
+   --08: Range [5, 9] getAllPoints {5,6,7,8,9}
+   --09: Range [7, 11) Doesn't Contain [4,11]
+   --10: Range(2, 10] containsRange [5, 9)
+   --11: Range [2,5) doesn't overlap [7,10)
+   --12: Range (4,7) containsRange {5,6}
+   --13: Range [7,11) not equals (2,4]
+   --14: Range (3,10] doesn't overlap (11,16)
+   --15: Range [3,5) overlap (2,10]
+   --16: Range [7,11) getAllPoints {7,8,9,10}
+   --17: Range (4,8) areEqual [5,7]
+   --18: Range [2,5) doesn'tContain (2,10]
+   --19: Range (2,10] contain [5,9) 
+   --20: Range [7,13) not equals (2,4]
